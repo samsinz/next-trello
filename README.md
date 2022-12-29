@@ -11,6 +11,9 @@
 - React
 - Vite
 
+**[Link to deployment](https://next-trello.netlify.app/)**
+
+
 ## Setup dev environment
 
 ### Dependencies
