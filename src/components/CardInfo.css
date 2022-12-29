@@ -1,0 +1,199 @@
+.CardInfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+dialog {
+  border: none;
+  border-radius: 3px;
+  margin: auto;
+  background-color: rgb(244, 245, 247);
+  color: rgb(49, 49, 49);
+  padding: 12px 24px;
+  width: 768px;
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.CardInfo .content {
+  width: 100%;
+}
+
+.CardInfo .content .top {
+  margin-bottom: 20px;
+}
+
+.CardInfo .content .top .list-name {
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+
+.CardInfo .content h3 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  height: 33px;
+}
+
+.CardInfo .bottom {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.CardInfo .bottom .title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+
+.CardInfo .description {
+  flex-grow: 1;
+}
+
+.CardInfo .description div p {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.CardInfo .no-description {
+  background-color: rgba(9, 30, 66, 0.04);
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 50px;
+  padding: 8px 12px;
+}
+
+.CardInfo .no-description:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.CardInfo .actions {
+  min-width: 190px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CardInfo button {
+  background-color: rgba(9, 30, 66, 0.04);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 4px 0px;
+  padding-left: 12px;
+  padding-right: 4px;
+  line-height: 32px;
+  height: 32px;
+  color: rgb(49, 49, 49);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  /* text-align: left; */
+}
+
+.CardInfo button:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.CardInfo .eye {
+  padding-top: 4px;
+}
+
+.CardInfo .dash {
+  padding-top: 4px;
+  padding-left: 0;
+}
+
+.CardInfo .actions .eye {
+  padding-left: 0;
+}
+
+.CardInfo .top .eye {
+  padding-top: 6px;
+}
+
+.CardInfo .close {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0px;
+  right: 0px;
+  height: 32px;
+  margin: 4px;
+  padding: 4px;
+  width: 32px;
+}
+
+.CardInfo .close:hover {
+  background-color: rgb(0, 0, 0, 0.06);
+  border-radius: 100%;
+}
+
+.CardInfo .close::before {
+  content: "";
+  background-color: rgb(145, 145, 145);
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background 85ms ease-in 0s;
+  width: 2px;
+}
+
+.CardInfo .close:hover::before {
+  background-color: black;
+}
+
+.CardInfo .close::after {
+  content: "";
+  background-color: rgb(145, 145, 145);
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background 85ms ease-in 0s;
+  width: 15px;
+}
+
+.CardInfo .close:hover::after {
+  background-color: black;
+}
+
+.CardInfo textarea {
+  border-radius: 3px;
+  box-shadow: rgb(9 30 66 / 13%) 0px 0px 0px 1px inset;
+  border-width: 0px;
+  font-size: 14px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.CardInfo .description-form button {
+  margin: 0px;
+  width: fit-content;
+}
+
+.CardInfo .description-form div {
+  display: flex;
+  /* position: relative; */
+}
+
+.CardInfo .cross {
+  left: 17.3%;
+  bottom: 11%;
+}

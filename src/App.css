@@ -1,0 +1,155 @@
+.App .top-bar {
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.App .top-bar img {
+  width: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.App .top-bar img:hover {
+  opacity: 0.8;
+}
+
+.App .body .title {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  height: 32px;
+}
+
+.App .body .title h1 {
+  padding-left: 12px;
+}
+
+.App .green-button {
+  background-color: rgb(90, 172, 68);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  margin: 0px 0px 0px 20px;
+  padding: 0 12px;
+  outline: none;
+  line-height: 32px;
+  height: 32px;
+}
+
+.App .green-button:hover {
+  background-color: #78bb5d;
+}
+
+.App .body .list-container {
+  display: flex;
+  color: rgb(49, 49, 49);
+}
+
+.App .body .add-list {
+  height: 40px;
+  min-width: 272px;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+  margin: 0 0 0 8px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 85ms ease-in 0s;
+}
+
+.App .body .add-list:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.App .body .plus {
+  color: white;
+  font-size: 26px;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+
+.App .body .add-list .plus {
+  margin-right: 8px;
+}
+
+.App .body .add-list button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.App .body .add-list-form {
+  height: 80px;
+  width: 272px;
+  border-radius: 3px;
+  margin: 0 0 0 8px;
+  background-color: rgb(235, 236, 240);
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  position: relative;
+  transition: background 85ms ease-in 0s;
+}
+
+.App .body .add-list-form input {
+  padding: 0 12px;
+  height: 36px;
+  outline: 0px;
+  border: none;
+  box-shadow: rgb(0 121 191) 0px 0px 0px 2px inset;
+  border-radius: 3px;
+}
+
+.App .body .add-list-form button {
+  margin-left: 0;
+  margin-top: 4px;
+}
+
+.App .cross {
+  margin-left: 4px;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+  bottom: 0px;
+  left: 53%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.App .cross::before {
+  content: "";
+  background-color: rgb(145, 145, 145);
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+}
+
+.App .cross:hover::before {
+  background-color: black;
+}
+
+.App .cross:hover::after {
+  background-color: black;
+}
+
+.App .cross::after {
+  content: "";
+  background-color: rgb(145, 145, 145);
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+}
